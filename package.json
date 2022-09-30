@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "w3c-html-validator": "^1.1.3"
+  }
+}
