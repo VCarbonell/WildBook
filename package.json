@@ -1,6 +1,24 @@
 {
+  "name": "wildbook01",
+  "version": "1.0.0",
+  "description": "First project WildCodeSchool",
+  "main": "index.js",
   "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VCarbonell/WildBook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VCarbonell/WildBook/issues"
+  },
+  "homepage": "https://github.com/VCarbonell/WildBook#readme",
   "devDependencies": {
     "w3c-html-validator": "^1.1.3"
   }
 }
+
