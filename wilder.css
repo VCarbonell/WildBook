@@ -1,0 +1,52 @@
+/*section wilders*/
+
+.Wilders {
+    padding: 10vw;
+}
+
+.scroll-container {
+    height: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border-right: .3em solid #F2B5B5;
+}
+
+.wildersTitle {
+    font-family: var(--title-font);
+    padding-bottom: 16px;
+    color: var(--title-color);
+}
+
+.wilder {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(252, 245, 244);
+    filter: drop-shadow(0px 3px 4px gray);
+    font-family: var(--text-font);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.picture {
+    grid-area: 1 / 1 / 3 / 2;
+    padding: .7em;
+    width: 90%;
+}
+
+.nameWilder {
+    font-family: var(--text-font);
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 3vw;
+    padding-top: .5em;
+    margin-left: 1em;
+}
+
+.descriptionWilder {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 2vw;
+    padding-top: .3em;
+    margin-left: 1.4em;
+}
