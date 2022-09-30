@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="wilder.css">
     <link rel="stylesheet" href="staff.css">
-    <script src="main.js"></script>
+    <script src="staff.js"></script>
     <title>WILD BOOK</title>
 </head>
 
@@ -157,29 +157,37 @@
     <section class="staff">
         <h2 class="staffTitle">STAFF</h2>
         <div class="staffContainer">
-            <div class="staffPerson">
-                <img src="./assets/StaffPic/PicDavid Faure.png" alt="David Faure" class="staffImg">
-                <span class="staffName">DAVID FAURE</span>
-                <span class="staffJob">Formateur JS</span>
-                <button onclick="addForm(this, event)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
+            <div>
+                <div class="staffPerson">
+                    <img src="./assets/StaffPic/PicDavid Faure.png" alt="David Faure" class="staffImg">
+                    <span class="staffName">DAVID FAURE</span>
+                    <span class="staffJob">Formateur JS</span>
+                    <button onclick="addForm(event, contactDavid)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
+                </div>
+                <form action="contactDavid" class="contactForm" id="contactDavid">
+                    <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required>
+                    <input type="text" name="object" class="formInput" id="object" placeholder="Object" required>
+                    <input type="text" name="message" class="formInput" id="message" placeholder="Message" required>
+                    <button class="sendBtn">SEND</button>
+                </form>
             </div>
             <div class="staffPerson">
                 <img src="./assets/StaffPic/PicJean Le-Grand Bokassa.png" alt="Jean Le-Grand Bokassa" class="staffImg">
                 <span class="staffName">JEAN LE-GRAND BOKASSA</span>
                 <span class="staffJob">Formateur PHP</span>
-                <button class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
+                <button onclick="addForm(event, 2)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
             <div class="staffPerson">
                 <img src="./assets/StaffPic/PicDavy Lebris.png" alt="Davy Lebris" class="staffImg">
                 <span class="staffName">DAVY LEBRIS</span>
                 <span class="staffJob">Teaching Assistant</span>
-                <button class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
+                <button onclick="addForm(event, 3)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
-            <div class="staffPerson" id="lastStaffBox">
+            <div class="staffPerson">
                 <img src="./assets/StaffPic/PicMarc Desideri.png" alt="Marc Desideri" class="staffImg">
                 <span class="staffName">MARC DESIDER</span>
                 <span class="staffJob">Teaching Assistant</span>
-                <button onclick="addForm(event, this)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
+                <button onclick="addForm(event, 4)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
         </div>
     </section>
