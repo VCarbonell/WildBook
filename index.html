@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>WILD BOOK</title>
 </head>
 
@@ -155,28 +156,28 @@
         <h2 class="staffTitle">STAFF</h2>
         <div class="staffContainer">
             <div class="staffPerson">
-                <img src="./assets/PicDavid Faure.png" alt="David Faure" class="staffImg">
+                <img src="./assets/StaffPic/PicDavid Faure.png" alt="David Faure" class="staffImg">
                 <span class="staffName">DAVID FAURE</span>
                 <span class="staffJob">Formateur JS</span>
-                <button class="contactBtn">CONTACT</button>
+                <button onclick="addForm(this, event)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
             <div class="staffPerson">
-                <img src="./assets/PicJean Le-Grand Bokassa.png" alt="Jean Le-Grand Bokassa" class="staffImg">
+                <img src="./assets/StaffPic/PicJean Le-Grand Bokassa.png" alt="Jean Le-Grand Bokassa" class="staffImg">
                 <span class="staffName">JEAN LE-GRAND BOKASSA</span>
                 <span class="staffJob">Formateur PHP</span>
-                <button class="contactBtn">CONTACT</button>
+                <button class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
             <div class="staffPerson">
-                <img src="./assets/PicDavy Lebris.png" alt="Davy Lebris" class="staffImg">
+                <img src="./assets/StaffPic/PicDavy Lebris.png" alt="Davy Lebris" class="staffImg">
                 <span class="staffName">DAVY LEBRIS</span>
                 <span class="staffJob">Teaching Assistant</span>
-                <button class="contactBtn">CONTACT</button>
+                <button class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
             <div class="staffPerson" id="lastStaffBox">
-                <img src="./assets/PicMarc Desideri.png" alt="Marc Desideri" class="staffImg">
+                <img src="./assets/StaffPic/PicMarc Desideri.png" alt="Marc Desideri" class="staffImg">
                 <span class="staffName">MARC DESIDER</span>
                 <span class="staffJob">Teaching Assistant</span>
-                <button class="contactBtn">CONTACT</button>
+                <button onclick="addForm(event, this)" class="contactBtn">CONTACT<img src="./assets/Icon/speech-bubble.png" alt="Speech Bubble" class="speechBubble"></button>
             </div>
         </div>
     </section>
