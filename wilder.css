@@ -4,11 +4,45 @@
     padding: 10vw;
 }
 
+.searchingBar {
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+#searchBar {
+    justify-content: flex-start;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 0px;
+    filter: drop-shadow(7px 3px 3px gray);
+    width: 95vw;
+    padding: 10px;
+}
+
+#buttonSearchBar {
+    width: 5vw;
+    justify-content: flex-end;
+    border: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    filter: drop-shadow(6px 3px 3px gray);
+}
+
+.loupe {
+    margin: 5px;
+    height: 18px;
+}
+
+
+
 .scroll-container {
-    height: 300px;
+    height: 30vw;
     overflow-y: scroll;
     scroll-behavior: smooth;
     border-right: .3em solid #F2B5B5;
+    box-shadow: .5em .6em .3em -.2em #CFCFCF;
 }
 
 .wildersTitle {
@@ -32,21 +66,21 @@
 
 .picture {
     grid-area: 1 / 1 / 3 / 2;
-    padding: .7em;
-    width: 90%;
+    padding-left: 10px;
+    height: 90%;
+    align-self: center;
 }
 
 .nameWilder {
     font-family: var(--text-font);
     grid-area: 1 / 2 / 2 / 3;
     font-size: 3vw;
-    padding-top: .5em;
-    margin-left: 1em;
+    margin-top: .5em;
 }
 
 .descriptionWilder {
+    font-family: var(--text-font);
     grid-area: 2 / 2 / 3 / 3;
     font-size: 2vw;
-    padding-top: .3em;
-    margin-left: 1.4em;
+    margin-bottom: .3em;
 }
