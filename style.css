@@ -1,0 +1,20 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Nunito:wght@800&display=swap');
+@import url('//db.onlinewebfonts.com/c/dd4320757ff990fa3d23662f08aa6f3a?family=CentralW01-Bold');
+
+/*define variable*/
+:root {
+    --main-color: #F87A7A;
+    --light-pink: #F2B5B5;
+    --background-item: #FCF5F4;
+    --title-color: #39424E;
+    --title-font: "CentralW01-Bold";
+    --text-font: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
