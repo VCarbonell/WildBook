@@ -1,8 +1,10 @@
 //Addind form when click on contact on mobile version
 
-function addForm(event, personToContact, actualContact, nextStaffPerson, buttonClicked) {
+function addForm(event, personToContact, actualContact, nextStaffPerson, buttonClicked, fullName) {
     event.preventDefault();
-    if (window.matchMedia("screen and (max-width: 768px)").matches) {
+    const receiver = document.querySelector("#directReceiver");
+    console.log(receiver);
+    if (window.matchMedia("screen and (max-width: 1023px)").matches) {
         if (buttonClicked.innerHTML.search('CONTACT') != -1) {
             if (nextStaffPerson)
             {
@@ -24,7 +26,10 @@ function addForm(event, personToContact, actualContact, nextStaffPerson, buttonC
             buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
             personToContact.style.display = "none";
         }
-    }    
+    }
+    else {
+        receiver.placeholder = fullName.innerHTML;
+    }   
 }
 
 
@@ -46,3 +51,4 @@ function unhover(buttonClicked) {
         buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/black_cross128px.png" alt="Speech Bubble" class="speechBubble">';
     }
 }
+
