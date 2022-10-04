@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="wilder.css">
     <link rel="stylesheet" href="staff.css">
+    <link rel="stylesheet" href="profil.css" />
     <script src="staff.js"></script>
-    <title>WILD BOOK</title>
-</head>
 
-<body>
+    <title>WILD BOOK</title>
+  </head>
+
+  <body>
     <nav></nav>
     <section class="Wilders">
+
         <h2 class="wildersTitle">Wilders</h2>
         <div class="searchingBar">
             <input type="search" id="searchBar" value="search wilders" onchange="ouvrirPage()">
@@ -156,8 +160,36 @@
         </section>
     </section>
 
-    <section class="profils"></section>
+    <section class="profils">
+      <div class="left-arrow">
+        <img src="/assets/Icon/fleche-droite 2.png" alt="" />
+      </div>
+      <div class="profile-container">
+        <img
+          src="/assets/WildersPic/PicAlexandre Pré.png"
+          alt=""
+          id="profile-image"
+        />
 
+        <h2 id="profile-name">ALEXANDRE PRE</h2>
+        <p id="profile-title">JS Developer</p>
+        <div class="bio">
+          <h3 id="profile-headers">Bio:</h3>
+          <p id="profile-text">
+            eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
+          </p>
+        </div>
+        <div class="objectives">
+          <h3 id="profile-headers">Personal Profile:</h3>
+          <p id="profile-text">
+            eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
+          </p>
+        </div>
+      </div>
+      <div class="right-arrow">
+        <img src="/assets/Icon/fleche-droite 1.png" alt="" />
+      </div>
+    </section>
 
     <section class="staff">
         <h2 class="staffTitle">STAFF</h2>
@@ -218,7 +250,7 @@
                     <button class="sendBtn">SEND</button>
                 </form>
             </div>        
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
