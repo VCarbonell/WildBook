@@ -2,28 +2,31 @@
 
 function addForm(event, personToContact, actualContact, nextStaffPerson, buttonClicked) {
     event.preventDefault();
-    if (buttonClicked.innerHTML.search('CONTACT') != -1) {
-        if (nextStaffPerson)
-        {
-            nextStaffPerson.style.boxShadow = "0 .4em .4em -.3em #CFCFCF, 0 -.4em .4em -.3em #CFCFCF";
-        }
-        buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/white_cross128px.png" alt="Speech Bubble" class="speechBubble">';
-        actualContact.style.marginBottom = "0";
-        personToContact.style.display = "flex";
-    }
-    else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
-        if (nextStaffPerson)
-        {
-            nextStaffPerson.style.boxShadow = "0 .4em .4em -.3em #CFCFCF";
-            actualContact.style.marginBottom = ".7em";
-        }
-        else {
+    if (window.matchMedia("screen and (max-width: 768px)").matches) {
+        if (buttonClicked.innerHTML.search('CONTACT') != -1) {
+            if (nextStaffPerson)
+            {
+                nextStaffPerson.style.boxShadow = "0 .4em .4em -.3em #CFCFCF, 0 -.4em .4em -.3em #CFCFCF";
+            }
+            buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/white_cross128px.png" alt="Speech Bubble" class="speechBubble">';
             actualContact.style.marginBottom = "0";
+            personToContact.style.display = "flex";
         }
-        buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
-        personToContact.style.display = "none";
-    }
+        else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
+            if (nextStaffPerson)
+            {
+                nextStaffPerson.style.boxShadow = "0 .4em .4em -.3em #CFCFCF";
+                actualContact.style.marginBottom = ".7em";
+            }
+            else {
+                actualContact.style.marginBottom = "0";
+            }
+            buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+            personToContact.style.display = "none";
+        }
+    }    
 }
+
 
 function hover(buttonClicked) {
     if (buttonClicked.innerHTML.search('CONTACT') != -1) {
@@ -33,6 +36,7 @@ function hover(buttonClicked) {
         buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/white_cross128px.png" alt="Speech Bubble" class="speechBubble">';
     }
 }
+
 
 function unhover(buttonClicked) {
     if (buttonClicked.innerHTML.search('CONTACT') != -1) {
