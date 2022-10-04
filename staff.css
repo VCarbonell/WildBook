@@ -16,7 +16,7 @@
     flex-direction: column;
     background-color: var(--background-item);
     border-radius: .1em;
-    box-shadow: .5em .6em .3em -.2em #CFCFCF;;
+    box-shadow: .7vw .9vw .3vw -.2vw #CFCFCF;;
     border-right: .4em solid var(--light-pink);
 
 }
@@ -28,8 +28,8 @@
     background-color: var(--background-item);
     font-family: var(--text-font);
     font-weight: bold;
-    box-shadow: 0 .4em .4em -.3em #CFCFCF;
-    margin-bottom: .7em;
+    box-shadow: 0 .5vw .4vw -.3vw #CFCFCF;
+    margin-bottom: .7vw;
     padding: .2em;
     height: 10vw;
 }
