@@ -57,7 +57,7 @@
   font-family: var(--text-font);
   font-weight: 600;
   font-size: 3vw;
-  padding-left: 12vw;
+  margin: auto;
   padding-top: 2vw;
 }
 #profile-title {
