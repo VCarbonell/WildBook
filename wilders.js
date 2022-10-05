@@ -11,3 +11,18 @@ for (let i = 0; i < scroll.length; i++) {
     profilePic.src = scroll[i].querySelector(".picture").src;
   };
 }
+let i = 0;
+rightArrow.onclick = function () {
+  profileTitle.innerText = scroll[i].querySelector(".nameWilder").innerText;
+  profilePic.src = scroll[i].querySelector(".picture").src;
+  if (i < scroll.length) {
+    i++;
+  }
+};
+leftArrow.onclick = function () {
+  profileTitle.innerText = scroll[i].querySelector(".nameWilder").innerText;
+  profilePic.src = scroll[i].querySelector(".picture").src;
+  if (i > 0 && i < scroll.length) {
+    i--;
+  }
+};
