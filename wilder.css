@@ -9,30 +9,35 @@
   margin-bottom: 3vw;
 }
 
-#searchBar {
-  justify-content: flex-start;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border: 0px;
-  filter: drop-shadow(7px 3px 3px gray);
-  width: 95vw;
-  padding: 10px;
+
+#searchInput {
+    justify-content: flex-start;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 0px;
+    filter: drop-shadow(7px 3px 3px gray);
+    width: 95vw;
+    height: 6vw;
+    padding: .5em;
+    font-size: 3vw;
 }
 
 #buttonSearchBar {
-  width: 5vw;
-  justify-content: flex-end;
-  border: 0px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  cursor: pointer;
-  background-color: white;
-  filter: drop-shadow(6px 3px 3px gray);
+    width: 5vw;
+    height: 6vw;
+    justify-content: flex-end;
+    border: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    background-color: white;
+    filter: drop-shadow(6px 3px 3px gray);
 }
 
 .loupe {
-  margin: 5px;
-  height: 18px;
+    display: block;
+    margin-right: 3vw;
+    height: 3vw;
 }
 
 .scroll-container {
@@ -44,22 +49,25 @@
 }
 
 .wildersTitle {
-  font-family: var(--title-font);
-  padding-bottom: 16px;
-  color: var(--title-color);
+
+    font-family: var(--title-font);
+    padding-bottom: .7em;
+    font-size: 4.5vw;
+    color: var(--title-color);
 }
 
 .wilder {
-  height: 30%;
-  width: 100%;
-  background-color: rgb(252, 245, 244);
-  filter: drop-shadow(0px 3px 4px gray);
-  font-family: var(--text-font);
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(252, 245, 244);
+    filter: drop-shadow(0px 3px 4px gray);
+    font-family: var(--text-font);
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
 }
 
 .picture {
@@ -70,10 +78,13 @@
 }
 
 .nameWilder {
-  font-family: var(--text-font);
-  grid-area: 1 / 2 / 2 / 3;
-  font-size: 3vw;
-  margin-top: 0.5em;
+
+    font-family: var(--text-font);
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 3vw;
+    margin-top: .5em;
+    padding-left: 0vw;
+
 }
 
 .descriptionWilder {
