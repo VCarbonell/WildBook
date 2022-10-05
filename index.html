@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">     
+<html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -170,7 +171,6 @@
       <img src="/assets/Icon/fleche-droite 2.png" alt="" id="leftArrow"/>
     </div>
     <div class="profile-container">
-      <img src="/assets/Icon/black_cross128px.png" alt="" id="cross" />
       <img src="/assets/WildersPic/PicAlexandre Pré.png" alt="" id="profile-image" />
 
       <h2 id="profile-name">ALEXANDRE PRE</h2>
@@ -206,233 +206,69 @@
               onmouseout="unhover(this)" class="contactBtn" id="davidContactBtn">
               CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
             </button>
-          <h2 id="profile-name">ALEXANDRE PRE</h2>
-          <p id="profile-title">JS Developer</p>
-          <div class="bio">
-            <h3 id="profile-headers">Bio:</h3>
-            <p id="profile-text">
-              eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
-            </p>
+
           </div>
-          <div class="objectives">
-            <h3 id="profile-headers">Personal Profile:</h3>
-            <p id="profile-text">
-              eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
-            </p>
-          </div>
+          <form action="" class="contactForm" id="contactDavid">
+            <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
+            <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
+            <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
+              required></textarea>
+            <button class="sendBtn">SEND</button>
+          </form>
         </div>
-        <div class="right-arrow">
-          <img src="/assets/Icon/fleche-droite 1.png" alt="" id="rightArrow" />
+        <div>
+          <div class="staffPerson" id="Jean">
+            <img src="./assets/StaffPic/PicJean Le-Grand Bokassa.png" alt="Jean Le-Grand Bokassa" class="staffImg" />
+            <span class="staffName" id="fullNameJean">JEAN LE-GRAND BOKASSA</span>
+            <span class="staffJob">Formateur PHP</span>
+            <button onclick="addForm(event, contactJean, Jean, Davy, this, fullNameJean)" onmouseover="hover(this)"
+              onmouseout="unhover(this)" class="contactBtn">
+              CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
+            </button>
+          </div>
+          <form action="" class="contactForm" id="contactJean">
+            <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
+            <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
+            <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
+              required></textarea>
+            <button class="sendBtn">SEND</button>
+          </form>
         </div>
-      </section>
-    </div>
-    <div class="staffContact">
-      <section class="staff">
-        <h2 class="staffTitle">STAFF</h2>
-        <div class="staffContainer">
-          <div>
-            <div class="staffPerson" id="David">
-              <img
-                src="./assets/StaffPic/PicDavid Faure.png"
-                alt="David Faure"
-                class="staffImg"
-              />
-              <span class="staffName" id="fullNameDavid">DAVID FAURE</span>
-              <span class="staffJob">Formateur JS</span>
-              <button
-                onclick="addForm(event, contactDavid, David, Jean, this, fullNameDavid)"
-                onmouseover="hover(this)"
-                onmouseout="unhover(this)"
-                class="contactBtn"
-                id="davidContactBtn"
-              >
-                CONTACT<img
-                  src="./assets/Icon/black_speech_bubble128px.png"
-                  alt="Speech Bubble"
-                  class="speechBubble"
-                />
-              </button>
-            </div>
-            <form action="" class="contactForm" id="contactDavid">
-              <input
-                type="text"
-                name="email"
-                class="formInput"
-                id="email"
-                placeholder="exemple@gmail.com"
-                required
-              />
-              <input
-                type="text"
-                name="object"
-                class="formInput"
-                id="object"
-                placeholder="Object"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                class="formInput"
-                id="message"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button class="sendBtn">SEND</button>
-            </form>
+        <div>
+          <div class="staffPerson" id="Davy">
+            <img src="./assets/StaffPic/PicDavy Lebris.png" alt="Davy Lebris" class="staffImg" />
+            <span class="staffName" id="fullNameDavy">DAVY LEBRIS</span>
+            <span class="staffJob">Teaching Assistant</span>
+            <button onclick="addForm(event, contactDavy, Davy, Marc, this, fullNameDavy)" onmouseover="hover(this)"
+              onmouseout="unhover(this)" class="contactBtn">
+              CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
+            </button>
           </div>
-          <div>
-            <div class="staffPerson" id="Jean">
-              <img
-                src="./assets/StaffPic/PicJean Le-Grand Bokassa.png"
-                alt="Jean Le-Grand Bokassa"
-                class="staffImg"
-              />
-              <span class="staffName" id="fullNameJean"
-                >JEAN LE-GRAND BOKASSA</span
-              >
-              <span class="staffJob">Formateur PHP</span>
-              <button
-                onclick="addForm(event, contactJean, Jean, Davy, this, fullNameJean)"
-                onmouseover="hover(this)"
-                onmouseout="unhover(this)"
-                class="contactBtn"
-              >
-                CONTACT<img
-                  src="./assets/Icon/black_speech_bubble128px.png"
-                  alt="Speech Bubble"
-                  class="speechBubble"
-                />
-              </button>
-            </div>
-            <form action="" class="contactForm" id="contactJean">
-              <input
-                type="text"
-                name="email"
-                class="formInput"
-                id="email"
-                placeholder="exemple@gmail.com"
-                required
-              />
-              <input
-                type="text"
-                name="object"
-                class="formInput"
-                id="object"
-                placeholder="Object"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                class="formInput"
-                id="message"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button class="sendBtn">SEND</button>
-            </form>
+          <form action="" class="contactForm" id="contactDavy">
+            <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
+            <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
+            <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
+              required></textarea>
+            <button class="sendBtn">SEND</button>
+          </form>
+        </div>
+        <div>
+          <div class="staffPerson" id="Marc">
+            <img src="./assets/StaffPic/PicMarc Desideri.png" alt="Marc Desideri" class="staffImg" />
+            <span class="staffName" id="fullNameMarc">MARC DESIDER</span>
+            <span class="staffJob">Teaching Assistant</span>
+            <button onclick="addForm(event, contactMarc, Marc, 0, this, fullNameMarc)" onmouseover="hover(this)"
+              onmouseout="unhover(this)" class="contactBtn">
+              CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
+            </button>
           </div>
-          <div>
-            <div class="staffPerson" id="Davy">
-              <img
-                src="./assets/StaffPic/PicDavy Lebris.png"
-                alt="Davy Lebris"
-                class="staffImg"
-              />
-              <span class="staffName" id="fullNameDavy">DAVY LEBRIS</span>
-              <span class="staffJob">Teaching Assistant</span>
-              <button
-                onclick="addForm(event, contactDavy, Davy, Marc, this, fullNameDavy)"
-                onmouseover="hover(this)"
-                onmouseout="unhover(this)"
-                class="contactBtn"
-              >
-                CONTACT<img
-                  src="./assets/Icon/black_speech_bubble128px.png"
-                  alt="Speech Bubble"
-                  class="speechBubble"
-                />
-              </button>
-            </div>
-            <form action="" class="contactForm" id="contactDavy">
-              <input
-                type="text"
-                name="email"
-                class="formInput"
-                id="email"
-                placeholder="exemple@gmail.com"
-                required
-              />
-              <input
-                type="text"
-                name="object"
-                class="formInput"
-                id="object"
-                placeholder="Object"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                class="formInput"
-                id="message"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button class="sendBtn">SEND</button>
-            </form>
-          </div>
-          <div>
-            <div class="staffPerson" id="Marc">
-              <img
-                src="./assets/StaffPic/PicMarc Desideri.png"
-                alt="Marc Desideri"
-                class="staffImg"
-              />
-              <span class="staffName" id="fullNameMarc">MARC DESIDER</span>
-              <span class="staffJob">Teaching Assistant</span>
-              <button
-                onclick="addForm(event, contactMarc, Marc, 0, this, fullNameMarc)"
-                onmouseover="hover(this)"
-                onmouseout="unhover(this)"
-                class="contactBtn"
-              >
-                CONTACT<img
-                  src="./assets/Icon/black_speech_bubble128px.png"
-                  alt="Speech Bubble"
-                  class="speechBubble"
-                />
-              </button>
-            </div>
-            <form action="" class="contactForm" id="contactMarc">
-              <input
-                type="text"
-                name="email"
-                class="formInput"
-                id="email"
-                placeholder="exemple@gmail.com"
-                required
-              />
-              <input
-                type="text"
-                name="object"
-                class="formInput"
-                id="object"
-                placeholder="Object"
-                required
-              />
-              <textarea
-                type="text"
-                name="message"
-                class="formInput"
-                id="message"
-                placeholder="Message"
-                required
-              ></textarea>
-              <button class="sendBtn">SEND</button>
-            </form>
-          </div>
+          <form action="" class="contactForm" id="contactMarc">
+            <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
+            <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
+            <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
+              required></textarea>
+            <button class="sendBtn">SEND</button>
+          </form>
         </div>
       </div>
     </section>
