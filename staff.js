@@ -1,9 +1,8 @@
 //Addind form when click on contact on mobile version
 
-function addForm(event, personToContact, actualContact, nextStaffPerson, buttonClicked, fullName) {
+function addForm(event, personToContact, actualContact, nextStaffPerson, buttonClicked, fullName, lastButton) {
     event.preventDefault();
     const receiver = document.querySelector("#directReceiver");
-    console.log(receiver);
     if (window.matchMedia("screen and (max-width: 1023px)").matches) {
         if (buttonClicked.innerHTML.search('CONTACT') != -1) {
             if (nextStaffPerson)
@@ -29,26 +28,36 @@ function addForm(event, personToContact, actualContact, nextStaffPerson, buttonC
     }
     else {
         receiver.placeholder = fullName.innerHTML;
+        const allButon = document.querySelectorAll(".contactBtn")
+        allButon.forEach(element => {
+            element.classList.remove("activeButton");
+            element.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+        })
+        buttonClicked.classList.add("activeButton");
+        buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
     }   
 }
 
 
 function hover(buttonClicked) {
-    if (buttonClicked.innerHTML.search('CONTACT') != -1) {
-        buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
-    }
-    else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
-        buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/white_cross128px.png" alt="Speech Bubble" class="speechBubble">';
+    if (!(buttonClicked.classList.contains("activeButton"))) {
+        if (buttonClicked.innerHTML.search('CONTACT') != -1) {
+            buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/white_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+        }
+        else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
+            buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/white_cross128px.png" alt="Speech Bubble" class="speechBubble">';
+        }
     }
 }
 
 
 function unhover(buttonClicked) {
-    if (buttonClicked.innerHTML.search('CONTACT') != -1) {
-        buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
-    }
-    else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
-        buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/black_cross128px.png" alt="Speech Bubble" class="speechBubble">';
+    if (!(buttonClicked.classList.contains("activeButton"))) {
+        if (buttonClicked.innerHTML.search('CONTACT') != -1) {
+            buttonClicked.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+        }
+        else if (buttonClicked.innerHTML.search('CLOSE') != -1) {
+            buttonClicked.innerHTML = 'CLOSE<img src="./assets/Icon/black_cross128px.png" alt="Speech Bubble" class="speechBubble">';
+        }
     }
 }
-
