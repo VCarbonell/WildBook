@@ -35,7 +35,7 @@ searchInput.addEventListener("keypress", function () {
   const input = searchInput.value;
 
   const result = persons.filter((item) => {
-    if (!item.search(`${input}`)) {
+    if (!item.toUpperCase().search(`${input.toUpperCase()}`)) {
       return item;
     }
   });
