@@ -8,7 +8,13 @@
   --title-font: "CentralW01-Bold";
   --text-font: "Montserrat", sans-serif;
 }
-
+html {
+  background: url(/assets/18408.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +26,7 @@
   margin: auto;
   width: clamp(20px, 50%, 400px);
   height: 80vw;
-  background: rgba(224, 191, 191, 0.36);
+  background: rgb(224, 191, 191);
   flex-direction: column;
   box-shadow: 4.05882px 5.41177px 16.2353px rgba(0, 0, 0, 0.25);
   border-radius: 25.7059px;
@@ -75,4 +81,123 @@
 }
 .right-arrow {
   margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .wilderInfo {
+    display: flex;
+  }
+
+  .scroll-container {
+    width: 50vw;
+    height: 30vw;
+  }
+
+  .nameWilder {
+    font-family: var(--text-font);
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  .descriptionWilder {
+    font-family: var(--text-font);
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+
+  .searchingBar {
+    display: none;
+    margin-bottom: 3vw;
+  }
+
+  .profile-container {
+    display: flex;
+    margin: auto;
+    width: clamp(20px, 23vw, 400px);
+    height: 32vw;
+
+    background: linear-gradient(
+      209.39deg,
+      rgba(224, 191, 192, 0.659) 100.69%,
+      rgba(147, 128, 128, 0.86) 118.14%
+    );
+    flex-direction: column;
+    box-shadow: 4.05882px 5.41177px 16.2353px rgba(0, 0, 0, 0.25);
+    border-radius: 25.7059px;
+  }
+  .profils {
+    padding-top: 2vw;
+  }
+  .Wilders {
+    padding: 5vw;
+  }
+
+  #profile-name {
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 1.5em;
+    margin: auto;
+    padding-top: 0.5em;
+  }
+  #profile-title {
+    font-family: var(--text-font);
+    font-weight: lighter;
+    font-size: 1.1vw;
+    padding-left: 8vw;
+  }
+  #profile-image {
+    width: 10vw;
+    margin-left: 6.5vw;
+    margin-top: 1vw;
+  }
+
+  #profile-headers {
+    padding-left: 3em;
+    padding-top: 1em;
+    font-family: var(--text-font);
+    font-weight: 600;
+    font-size: 1.3vw;
+  }
+  #profile-text {
+    padding-left: 4.5em;
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 1vw;
+  }
+
+  .left-arrow {
+    margin: auto;
+    padding-right: 2vw;
+  }
+  .right-arrow {
+    margin: auto;
+    padding-left: 2vw;
+  }
+
+  .profile-container:hover,
+  .profile-container:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 1em transparent;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+
+  #leftArrow:hover,
+  #leftArrow:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    width: 5em;
+  }
+
+  #rightArrow:hover,
+  #rightArrow:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    width: 5em;
+  }
 }

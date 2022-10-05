@@ -10,14 +10,15 @@
   <link rel="stylesheet" href="staff.css" />
   <link rel="stylesheet" href="profil.css" />
 
+
   <title>WILD BOOK</title>
 </head>
 
 <body>
   <nav></nav>
+  <div class="wilderInfo">
   <section class="Wilders">
     <h2 class="wildersTitle">Wilders</h2>
-
     <div class="searchingBar">
       <input class="input" id="searchInput" placeholder="Enter name wilder..." />
       <div id="suggestions"></div>
@@ -25,7 +26,6 @@
         <img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />
       </button>
     </div>
-
     <section class="scroll-container">
       <div class="wilder" id="wilder1">
         <img src="./assets/WildersPic/PicAlexandre Pré.png" alt="Alexandre Pré" class="picture" />
@@ -162,7 +162,7 @@
 
   <section class="profils">
     <div class="left-arrow">
-      <img src="/assets/Icon/fleche-droite 2.png" alt="" />
+      <img src="/assets/Icon/fleche-droite 2.png" alt="" id="leftArrow"/>
     </div>
     <div class="profile-container">
       <img src="/assets/WildersPic/PicAlexandre Pré.png" alt="" id="profile-image" />
@@ -183,9 +183,10 @@
       </div>
     </div>
     <div class="right-arrow">
-      <img src="/assets/Icon/fleche-droite 1.png" alt="" />
+      <img src="/assets/Icon/fleche-droite 1.png" alt="" id="rightArrow"/>
     </div>
   </section>
+    </div>
   <div class="staffContact">
     <section class="staff">
       <h2 class="staffTitle">STAFF</h2>
@@ -199,6 +200,7 @@
               onmouseout="unhover(this)" class="contactBtn" id="davidContactBtn">
               CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
             </button>
+
           </div>
           <form action="" class="contactForm" id="contactDavid">
             <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
