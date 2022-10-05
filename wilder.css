@@ -9,6 +9,7 @@
   margin-bottom: 3vw;
 }
 
+
 #searchInput {
   justify-content: flex-start;
   border-top-left-radius: 30px;
@@ -43,13 +44,13 @@
   height: 30vw;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scrollbar-color: red red;
   border-right: 0.3em solid #f2b5b5;
   box-shadow: 0.5em 0.6em 0.3em -0.2em #cfcfcf;
   scrollbar-color: red;
 }
 
 .wildersTitle {
+
   font-family: var(--title-font);
   padding-bottom: .7em;
   font-size: 4.5vw;
@@ -67,6 +68,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
 }
 
 .picture {
@@ -77,11 +79,13 @@
 }
 
 .nameWilder {
+
   font-family: var(--text-font);
   grid-area: 1 / 2 / 2 / 3;
   font-size: 3vw;
-  margin-top: 0.5em;
+  margin-top: .5em;
   padding-left: 0vw;
+
 }
 
 .descriptionWilder {
