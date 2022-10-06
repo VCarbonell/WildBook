@@ -23,20 +23,28 @@
 }
 
 #buttonSearchBar {
-  width: 5vw;
+  width: 7vw;
   height: 6vw;
   justify-content: flex-end;
   border: 0px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  cursor: pointer;
   background-color: white;
   filter: drop-shadow(6px 3px 3px gray);
 }
 
+#buttonSearchBar:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.loupe:hover {
+  color: white;
+}
+
 .loupe {
   display: block;
-  margin-right: 3vw;
+  margin-left: 1vw;
   height: 3vw;
 }
 
@@ -46,7 +54,6 @@
   scroll-behavior: smooth;
   border-right: 0.3em solid #f2b5b5;
   box-shadow: 0.5em 0.6em 0.3em -0.2em #cfcfcf;
-  scrollbar-color: red;
 }
 
 .wildersTitle {
