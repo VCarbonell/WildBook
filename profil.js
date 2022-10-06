@@ -58,3 +58,5 @@ searchButton.addEventListener("click", function () {
 for (let i = 0; i < scrollNames.length; i++) {
   console.log(scrollNames[i].innerText);
 }
+
+console.log("check");
