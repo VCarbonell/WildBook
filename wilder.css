@@ -19,6 +19,7 @@
   height: 6vw;
   padding: 0.5em;
   font-size: 3vw;
+  outline: none;
 }
 
 #buttonSearchBar {
@@ -73,6 +74,10 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   cursor: pointer;
+}
+
+.wilder:hover {
+  background-color: var(--light-pink);
 }
 
 .picture {
