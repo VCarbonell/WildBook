@@ -61,3 +61,58 @@ function unhover(buttonClicked) {
         }
     }
 }
+
+
+addEventListener('resize', (event) => {
+    event.preventDefault();
+    if (window.matchMedia("screen and (max-width: 1023px)").matches) {
+        const allButon = document.querySelectorAll(".contactBtn")
+        allButon.forEach(element => {
+            element.classList.remove("activeButton");
+            element.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+        })
+    }
+})
+
+const allSendBtn = document.querySelectorAll(".emailSend");
+const emailAnim = document.querySelector(".emailAnim");
+const directSendBtn = document.querySelector(".directSendBtn");
+const receiver = document.querySelector("#directReceiver");
+const allInput = document.querySelectorAll(".directFormInput");
+const contactBtn = document.querySelectorAll(".contactBtn");
+
+directSendBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    receiver.placeholder = "RECEIVER";
+    allInput.forEach(input => {
+        input.value = "";
+    })
+    contactBtn.forEach(button => {
+        button.classList.remove("activeButton");
+        button.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+    })
+})
+
+function emailSend(event, actualForm) {
+    event.preventDefault();
+    emailAnim.style.display = "block";
+    const delayInMilliseconds = 2000;
+    const contactBtn = document.querySelectorAll(".contactBtn");
+    const allInput = document.querySelectorAll(".formInput");
+    contactBtn.forEach(button => {
+        if (button.innerHTML.search('CLOSE') != -1) {
+            button.innerHTML = 'CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble">';
+        }
+    })
+    allInput.forEach(input => {
+        input.value = "";
+    })
+    if (actualForm) {
+        actualForm.style.display = "none";
+    }
+    setTimeout(function() {
+        emailAnim.style.display = "none";
+    }, delayInMilliseconds);
+}
+
+

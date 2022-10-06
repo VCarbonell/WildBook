@@ -1,5 +1,14 @@
 /*section staff*/
 
+@keyframes email {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
 .staff {
     padding: 10vw;
 }
@@ -18,7 +27,6 @@
     border-radius: .1em;
     box-shadow: .7vw .9vw .3vw -.2vw #CFCFCF;
     border-right: .4em solid var(--light-pink);
-
 }
 
 .staffPerson {
@@ -167,6 +175,26 @@
     display: none;
 }
 
+.emailAnim {
+    display: none;
+    animation: email 1s ease-in forwards;
+    font-family: var(--text-font);
+    font-size: 3vw;
+    line-height: 1.8;
+    color: white;
+    background: var(--light-pink);
+    background:linear-gradient(to right, var(--light-pink) 50%, var(--main-color) 50%);
+    background-size: 200% 100%;
+    width: 40%;
+    height: 5vw;
+    position:fixed;
+    top: 10%;
+    left: 30%;
+    text-align: center;
+    border-radius: .1em;
+    box-shadow: 0 0.4em .4em -.3em white;
+}
+
 @media screen and (min-width: 1024px){
 
     .staffContact {
@@ -289,5 +317,12 @@
     .directSendBtn:hover {
         scale: 1.2;
         cursor: pointer;
+    }
+
+    .emailAnim {
+        height: 4vw;
+        width: 35vw;
+        font-size: 2.5vw;
+        line-height: 1.6;
     }
 }
