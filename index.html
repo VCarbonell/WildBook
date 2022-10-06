@@ -28,7 +28,7 @@
     <div class="searchingBar">
       <input class="input" id="searchInput" placeholder="Enter name wilder..." />
       <div id="suggestions"></div>
-      <button type="button" id="buttonSearchBar">
+      <button type="button" id="buttonSearchBar" onmouseover="hoverSearch(this)" onmouseout="unhoverSearch(this)">
         <img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />
       </button>
     </div>
@@ -214,7 +214,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactDavid)">SEND</button>
           </form>
         </div>
         <div>
@@ -232,7 +232,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactJean)">SEND</button>
           </form>
         </div>
         <div>
@@ -250,7 +250,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactDavy)">SEND</button>
           </form>
         </div>
         <div>
@@ -268,7 +268,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactMarc)">SEND</button>
           </form>
         </div>
       </div>
@@ -283,10 +283,11 @@
         <input type="text" name="object" class="directFormInput" id="directObject" placeholder="Object" required />
         <textarea type="text" name="message" class="directFormInput" id="directMessage" placeholder="Message"
           required></textarea>
-        <button class="directSendBtn">SEND</button>
+        <button class="directSendBtn" onclick="emailSend(event, null)">SEND</button>
       </form>
     </section>
   </div>
+  <div class="emailAnim">Mail sent with success</div>
   <footer>
         <p>Wild Code School - 171 Rue Lucien Faure, 33300 Bordeaux</p>
    </footer>
@@ -295,5 +296,4 @@
 <script src="staff.js"></script>
 <script src="profil.js"></script>
 <script src="wilders.js"></script>
-
 </html>

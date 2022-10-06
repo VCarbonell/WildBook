@@ -26,3 +26,6 @@ leftArrow.onclick = function () {
     i--;
   }
 };
+
+
+

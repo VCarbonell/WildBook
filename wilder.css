@@ -34,6 +34,11 @@
   filter: drop-shadow(6px 3px 3px gray);
 }
 
+#buttonSearchBar:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
 .loupe {
   display: block;
   margin-right: 3vw;
