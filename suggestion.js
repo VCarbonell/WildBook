@@ -39,5 +39,10 @@ searchInput.addEventListener('keypress', function () {
         }
 
     })
-    console.log(result)
+    console.log(result);
+    for (let i = 0; i < scroll.length; i++) {
+        if (scroll[i].includes(result)) {
+          console.log(true);
+        }
+      }
 })
