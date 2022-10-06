@@ -1,3 +1,3 @@
 const nodemailer = require("nodemailer");
 
-let transporter = nodemailer.createTransport(transport[, defaults]);
+let transporter = nodemailer.createTransport(transport[ defaults]);
