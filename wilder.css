@@ -102,6 +102,10 @@
   margin-bottom: 0.3em;
 }
 
+#navSearchBar {
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
   .wildersTitle {
     font-size: 3vw;
@@ -149,5 +153,32 @@
 
   .picture {
     height: 90%;
+  }
+
+  #navSearchBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+    filter: drop-shadow(0 0 0 white);
+  }
+  #searchInput {
+    width: 60%;
+    height: 2.5vw;
+    font-size: 1.75vw;
+    filter: drop-shadow(0 0 0 var(--light-pink));
+    box-shadow: .6vw .2vw .4vw .02vw var(--light-pink);
+  }
+
+  #buttonSearchBar {
+    width: 10%;
+    height: 2.5vw;
+    font-size: 1.75vw;
+    filter: drop-shadow(0 0 0 var(--light-pink));
+    box-shadow: .3vw .2vw .4vw .02vw var(--light-pink);
+  }
+
+  .loupe {
+    height: 80%;
   }
 }
