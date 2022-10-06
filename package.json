@@ -19,6 +19,8 @@
   "homepage": "https://github.com/VCarbonell/WildBook#readme",
   "devDependencies": {
     "w3c-html-validator": "^1.1.3"
+  },
+  "dependencies": {
+    "nodemailer": "^6.8.0"
   }
 }
-
