@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,8 +8,7 @@
   <link rel="stylesheet" href="wilder.css" />
   <link rel="stylesheet" href="staff.css" />
   <link rel="stylesheet" href="profil.css" />
-  <link rel="stylesheet" href="nav.css">
-
+    <link rel="stylesheet" href="nav.css" />
   <title>WILD BOOK</title>
 </head>
 
@@ -24,10 +22,6 @@
           <img src="./assets/Icon/Wild logo 1.png" class="logo" >
         </div>
         <div class="navTitle">WILD BOOK</div>  
-            
-        <div class = "profil">
-          <img src="./assets/WildersPic/PicRyan Tama.png" class="profil" >
-         </div>
         <div class = "bouton1">
           <img src="./assets/Icon/wilders.png" class="bouton1" >
         </div>
@@ -37,6 +31,9 @@
         <div class = "bouton3">
           <img src="./assets/Icon/message.png" class="bouton3" >
         </div>
+        <div class = "profil">
+          <img src="./assets/WildersPic/PicRyan Tama.png" class="profil" >
+        </div>
           
     </nav>
   <div class="wilderInfo">
@@ -45,7 +42,7 @@
     <div class="searchingBar">
       <input class="input" id="searchInput" placeholder="Enter name wilder..." />
       <div id="suggestions"></div>
-      <button type="button" id="buttonSearchBar">
+        <button id="buttonSearchBar" onmouseout="unhoverSearch(this)" onmouseover="hoverSearch(this)">
         <img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />
       </button>
     </div>
@@ -185,9 +182,10 @@
 
   <section class="profils">
     <div class="left-arrow">
-      <img src="/assets/Icon/fleche-droite 2.png" alt="" id="leftArrow"/>
+        <img src="/assets/Icon/fleche-droite 2.png" alt="" id="leftArrow" />
     </div>
     <div class="profile-container">
+        <img src="/assets/Icon/black_cross128px.png" alt="" id="cross" />
       <img src="/assets/WildersPic/PicAlexandre Pré.png" alt="" id="profile-image" />
 
       <h2 id="profile-name">ALEXANDRE PRE</h2>
@@ -195,18 +193,18 @@
       <div class="bio">
         <h3 id="profile-headers">Bio:</h3>
         <p id="profile-text">
-          eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veritatis! Mollitia dolorem aspe
         </p>
       </div>
       <div class="objectives">
         <h3 id="profile-headers">Personal Profile:</h3>
         <p id="profile-text">
-          eviebirferinvienvreivjnvei<br />jnviejvejrniveineivejnni<br />jnviejvejrniveineivejnni
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
         </p>
       </div>
     </div>
     <div class="right-arrow">
-      <img src="/assets/Icon/fleche-droite 1.png" alt="" id="rightArrow"/>
+        <img src="/assets/Icon/fleche-droite 1.png" alt="" id="rightArrow" />
     </div>
   </section>
     </div>
@@ -223,14 +221,13 @@
               onmouseout="unhover(this)" class="contactBtn" id="davidContactBtn">
               CONTACT<img src="./assets/Icon/black_speech_bubble128px.png" alt="Speech Bubble" class="speechBubble" />
             </button>
-
           </div>
           <form action="" class="contactForm" id="contactDavid">
             <input type="text" name="email" class="formInput" id="email" placeholder="exemple@gmail.com" required />
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactDavid)">SEND</button>
           </form>
         </div>
         <div>
@@ -248,7 +245,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactJean)">SEND</button>
           </form>
         </div>
         <div>
@@ -266,7 +263,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactDavy)">SEND</button>
           </form>
         </div>
         <div>
@@ -284,7 +281,7 @@
             <input type="text" name="object" class="formInput" id="object" placeholder="Object" required />
             <textarea type="text" name="message" class="formInput" id="message" placeholder="Message"
               required></textarea>
-            <button class="sendBtn">SEND</button>
+            <button class="sendBtn" onclick="emailSend(event, contactMarc)">SEND</button>
           </form>
         </div>
       </div>
@@ -299,10 +296,11 @@
         <input type="text" name="object" class="directFormInput" id="directObject" placeholder="Object" required />
         <textarea type="text" name="message" class="directFormInput" id="directMessage" placeholder="Message"
           required></textarea>
-        <button class="directSendBtn">SEND</button>
+        <button class="directSendBtn" onclick="emailSend(event, null)">SEND</button>
       </form>
     </section>
   </div>
+  <div class="emailAnim">Mail sent with success</div>
   <footer>
         <p>Wild Code School - 171 Rue Lucien Faure, 33300 Bordeaux</p>
    </footer>
@@ -311,5 +309,4 @@
 <script src="staff.js"></script>
 <script src="profil.js"></script>
 <script src="wilders.js"></script>
-
 </html>

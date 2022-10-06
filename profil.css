@@ -24,7 +24,7 @@ html {
 }
 
 .profile-container {
-  display: flex;
+  display: none;
   margin: auto;
   width: clamp(20px, 50%, 400px);
   height: 80vw;
@@ -32,6 +32,8 @@ html {
   flex-direction: column;
   box-shadow: 4.05882px 5.41177px 16.2353px rgba(0, 0, 0, 0.25);
   border-radius: 25.7059px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
 .bio {
@@ -52,7 +54,7 @@ html {
 
 #profile-headers {
   padding-left: 1em;
-  padding-top: 1em;
+  padding-top: 0.4em;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 4.2vw;
@@ -90,34 +92,65 @@ html {
   margin: auto;
 }
 
+#leftArrow {
+  display: none;
+}
+
 .right-arrow {
   margin: auto;
 }
 
+#rightArrow {
+  display: none;
+}
+#cross {
+  display: none;
+  width: 4vw;
+  margin-left: 40vw;
+  margin-top: 4vw;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  #rightArrow {
+    display: flex;
+  }
+  #leftArrow {
+    display: flex;
+  }
 
   .profile-container {
     display: flex;
     margin: auto;
     width: clamp(20px, 23vw, 400px);
-    height: 32vw;
-
-    background: linear-gradient(209.39deg,
-        rgba(224, 191, 192, 0.659) 100.69%,
-        rgba(147, 128, 128, 0.86) 118.14%);
+    height: 30vw;
+    margin-bottom: 5.5vw;
+    background: linear-gradient(
+      209.39deg,
+      rgba(224, 191, 192, 0.659) 100.69%,
+      rgba(147, 128, 128, 0.86) 118.14%
+    );
     flex-direction: column;
     box-shadow: 4.05882px 5.41177px 16.2353px rgba(0, 0, 0, 0.25);
     border-radius: 25.7059px;
   }
 
   .profils {
-    padding-top: 2vw;
+    padding-top: 8vw;
   }
 
   #profile-name {
     font-family: var(--text-font);
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     margin: auto;
     padding-top: 0.5em;
   }
@@ -136,8 +169,8 @@ html {
   }
 
   #profile-headers {
-    padding-left: 3em;
-    padding-top: 1em;
+    padding-left: 2em;
+    padding-top: 0.5em;
     font-family: var(--text-font);
     font-weight: 600;
     font-size: 1.3vw;
@@ -148,6 +181,13 @@ html {
     font-family: var(--text-font);
     font-weight: 400;
     font-size: 1vw;
+  }
+
+  #cross {
+    display: none;
+    width: 2vw;
+    margin-left: 19vw;
+    margin-top: 1.5vw;
   }
 
   .left-arrow {
@@ -168,7 +208,7 @@ html {
 
   @keyframes pulse {
     0% {
-      box-shadow: 0 0 0 0 var(--hover);
+      box-shadow: 2 0 0 0 var(--hover);
     }
   }
 
@@ -176,13 +216,11 @@ html {
   #leftArrow:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
-    width: 5em;
   }
 
   #rightArrow:hover,
   #rightArrow:focus {
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
-    width: 5em;
   }
 }

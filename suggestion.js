@@ -39,5 +39,19 @@ searchInput.addEventListener('keypress', function () {
         }
 
     })
-    console.log(result)
+    console.log(result);
+    for (let i = 0; i < scroll.length; i++) {
+        if (scroll[i].includes(result)) {
+          console.log(true);
+        }
+      }
 })
+
+
+function hoverSearch(searchBtn) {
+    searchBtn.innerHTML = '<img src="./assets/Icon/loupe-white.png" alt="magnifying glass" class="loupe" />'
+  }
+  
+  function unhoverSearch(searchBtn) {
+    searchBtn.innerHTML = '<img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />'
+  }

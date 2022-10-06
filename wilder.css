@@ -9,7 +9,6 @@
   margin-bottom: 3vw;
 }
 
-
 #searchInput {
   justify-content: flex-start;
   border-top-left-radius: 30px;
@@ -18,25 +17,33 @@
   filter: drop-shadow(7px 3px 3px gray);
   width: 95vw;
   height: 6vw;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 3vw;
+  outline: none;
 }
 
 #buttonSearchBar {
-  width: 5vw;
+  width: 7vw;
   height: 6vw;
   justify-content: flex-end;
   border: 0px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  cursor: pointer;
   background-color: white;
   filter: drop-shadow(6px 3px 3px gray);
 }
 
+#buttonSearchBar:hover {
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+#buttonSearchBar:hover>.loupe {
+  src: "./assets/Icon/loupe-white.png";
+}
 .loupe {
   display: block;
-  margin-right: 3vw;
+  margin-left: 1vw;
   height: 3vw;
 }
 
@@ -46,13 +53,11 @@
   scroll-behavior: smooth;
   border-right: 0.3em solid #f2b5b5;
   box-shadow: 0.5em 0.6em 0.3em -0.2em #cfcfcf;
-  scrollbar-color: red;
 }
 
 .wildersTitle {
-
   font-family: var(--title-font);
-  padding-bottom: .7em;
+  padding-bottom: 0.7em;
   font-size: 4.5vw;
   color: var(--title-color);
 }
@@ -68,24 +73,26 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  cursor: pointer;
+}
 
+.wilder:hover {
+  background-color: var(--light-pink);
 }
 
 .picture {
   grid-area: 1 / 1 / 3 / 2;
-  padding-left: .5vw;
+  padding-left: 0.5vw;
   height: 90%;
   align-self: center;
 }
 
 .nameWilder {
-
   font-family: var(--text-font);
   grid-area: 1 / 2 / 2 / 3;
   font-size: 3vw;
-  margin-top: .5em;
+  margin-top: 0.5em;
   padding-left: 0vw;
-
 }
 
 .descriptionWilder {
@@ -104,7 +111,9 @@
     grid-template-columns: 0.5fr 3fr;
     height: 20%;
   }
-
+  .wilder:hover {
+    background-color: #f2b5b5;
+  }
   .Wilders {
     padding: 5vw;
   }
@@ -122,7 +131,7 @@
     font-family: var(--text-font);
     grid-area: 1 / 2 / 2 / 3;
     font-size: 2vw;
-    margin-top: .4em;
+    margin-top: 0.4em;
     padding-left: 0vw;
   }
 
