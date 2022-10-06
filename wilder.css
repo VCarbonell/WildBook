@@ -38,10 +38,13 @@
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
 #buttonSearchBar:hover>.loupe {
   src: "./assets/Icon/loupe-white.png";
 }
 
+>>>>>>> origin/develop
 .loupe {
   display: block;
   margin-left: 1vw;

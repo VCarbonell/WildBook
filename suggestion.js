@@ -46,3 +46,12 @@ searchInput.addEventListener('keypress', function () {
         }
       }
 })
+
+
+function hoverSearch(searchBtn) {
+    searchBtn.innerHTML = '<img src="./assets/Icon/loupe-white.png" alt="magnifying glass" class="loupe" />'
+  }
+  
+  function unhoverSearch(searchBtn) {
+    searchBtn.innerHTML = '<img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />'
+  }

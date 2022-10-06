@@ -28,3 +28,7 @@ leftArrow.onclick = function () {
 };
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/develop
