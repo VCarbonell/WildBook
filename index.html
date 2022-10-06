@@ -1,197 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="wilder.css" />
-    <link rel="stylesheet" href="staff.css" />
-    <link rel="stylesheet" href="profil.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="wilder.css" />
+  <link rel="stylesheet" href="staff.css" />
+  <link rel="stylesheet" href="profil.css" />
     <link rel="stylesheet" href="nav.css" />
   <title>WILD BOOK</title>
 </head>
 
 <body>
   <nav>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </nav>
+        <div class="Burger">
+          <img src="./assets/Icon/Menu-Burger.png" class="Burger">
+         
+        </div>
+        <div class = "logo">
+          <img src="./assets/Icon/Wild logo 1.png" class="logo" >
+        </div>
+        <div class="navTitle">WILD BOOK</div>  
+        <div class = "bouton1">
+          <img src="./assets/Icon/wilders.png" class="bouton1" >
+        </div>
+        <div class = "bouton2">
+          <img src="./assets/Icon/teacher (1).png" class="bouton2" >
+        </div>
+        <div class = "bouton3">
+          <img src="./assets/Icon/message.png" class="bouton3" >
+        </div>
+        <div class = "profil">
+          <img src="./assets/WildersPic/PicRyan Tama.png" class="profil" >
+        </div>
+          
+    </nav>
   <div class="wilderInfo">
-    <section class="Wilders">
-      <h2 class="wildersTitle">Wilders</h2>
-      <div class="searchingBar">
-        <input class="input" id="searchInput" placeholder="Enter name wilder..." />
-        <div id="suggestions"></div>
+  <section class="Wilders">
+    <h2 class="wildersTitle">Wilders</h2>
+    <div class="searchingBar">
+      <input class="input" id="searchInput" placeholder="Enter name wilder..." />
+      <div id="suggestions"></div>
         <button id="buttonSearchBar" onmouseout="unhoverSearch(this)" onmouseover="hoverSearch(this)">
-          <img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />
-        </button>
+        <img src="./assets/Icon/loupe.png" alt="magnifying glass" class="loupe" />
+      </button>
+    </div>
+    <section class="scroll-container">
+      <div class="wilder" id="wilder1">
+        <img src="./assets/WildersPic/PicAlexandre Pré.png" alt="Alexandre Pré" class="picture" />
+        <p class="nameWilder"><strong>ALEXANDRE PRE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
       </div>
-      <section class="scroll-container">
-        <div class="wilder" id="wilder1">
-          <img src="./assets/WildersPic/PicAlexandre Pré.png" alt="Alexandre Pré" class="picture" />
-          <p class="nameWilder"><strong>ALEXANDRE PRE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicAlexandre Sarrazin.png" alt="Alexandre Sarrazin" class="picture" />
-          <p class="nameWilder"><strong>ALEXANDRE SARRAZIN</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicAmandine Leporace.png" alt="Amandine Leporace" class="picture" />
-          <p class="nameWilder"><strong>AMANDINE LEPORACE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicAnita Darecka.png" alt="Anita Darecka" class="picture" />
-          <p class="nameWilder"><strong>ANITA DARECKA</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicAnthony Labadie.png" alt="Anthony Labadie" class="picture" />
-          <p class="nameWilder"><strong>ANTHONY LABADIE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicCédric Mounier.png" alt="Cédric Mounier" class="picture" />
-          <p class="nameWilder"><strong>CEDRIC MOUNIER</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicGregory Ledez.png" alt="Gregory Ledez" class="picture" />
-          <p class="nameWilder"><strong>GREGORY LEDEZ</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicJulien Dussart.png" alt="Julien Dussart" class="picture" />
-          <p class="nameWilder"><strong>JULIEN DUSSART</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicLuc Jaubert.png" alt="Luc Jaubert" class="picture" />
-          <p class="nameWilder"><strong>LUC JAUBERT</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicMaxime Dupin.png" alt="Maxime Dupin" class="picture" />
-          <p class="nameWilder"><strong>MAXIME DUPIN</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicMehdi Guettache.png" alt="Medhi Guettache" class="picture" />
-          <p class="nameWilder"><strong>MEDHY GUETTACHE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicMichael Birepinte.png" alt="Michael Birepinte" class="picture" />
-          <p class="nameWilder"><strong>MICHAEL BIREPINTE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicNicolas Baudet.png" alt="Nicolas Baudet" class="picture" />
-          <p class="nameWilder"><strong>NICOLAS BAUDET</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicNicolas Delisée.png" alt="Nicolas Delisée" class="picture" />
-          <p class="nameWilder"><strong>NICOLAS DELISEE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicOlga Yasnopolskaya.png" alt="Olga Yasnopolskaya" class="picture" />
-          <p class="nameWilder"><strong>OLGA YASNOLSKAYA</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicOphélie Beausse.png" alt="Ophélie Beausse" class="picture" />
-          <p class="nameWilder"><strong>OPHELIE BEAUSSE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicPaul Battault.png" alt="Paul Battault" class="picture" />
-          <p class="nameWilder"><strong>PAUL BATTAULT</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicPaul Castaings.png" alt="Paul Castaings" class="picture" />
-          <p class="nameWilder"><strong>PAUL CASTAINGS</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicPeter Flandin.png" alt="Peter Flandin" class="picture" />
-          <p class="nameWilder"><strong>PETER FLANDIN</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicRobin Michel.png" alt="Robin Michel" class="picture" />
-          <p class="nameWilder"><strong>ROBIN MICHEL</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicRyan Tama.png" alt="Ryan Tama" class="picture" />
-          <p class="nameWilder"><strong>RYAN TAMA</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicSophie Dussillol.png" alt="Sophie Dussillol" class="picture" />
-          <p class="nameWilder"><strong>SOPHIE DUSSILLOL</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicTheo Anache.png" alt="Theo Anache" class="picture" />
-          <p class="nameWilder"><strong>THEO ANACHE</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicValentin Carbonell.png" alt="Valentin Carbonell" class="picture" />
-          <p class="nameWilder"><strong>VALENTIN CARBONELL</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicVictoire Michel.png" alt="Victoire Michel" class="picture" />
-          <p class="nameWilder"><strong>VICTOIRE MICHEL</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-        <div class="wilder">
-          <img src="./assets/WildersPic/PicYann Stefanutti.png" alt="Yann Stefanutti" class="picture" />
-          <p class="nameWilder"><strong>YANN STEFANUTTI</strong></p>
-          <p class="descriptionWilder">Developper JS</p>
-        </div>
-      </section>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicAlexandre Sarrazin.png" alt="Alexandre Sarrazin" class="picture" />
+        <p class="nameWilder"><strong>ALEXANDRE SARRAZIN</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicAmandine Leporace.png" alt="Amandine Leporace" class="picture" />
+        <p class="nameWilder"><strong>AMANDINE LEPORACE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicAnita Darecka.png" alt="Anita Darecka" class="picture" />
+        <p class="nameWilder"><strong>ANITA DARECKA</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicAnthony Labadie.png" alt="Anthony Labadie" class="picture" />
+        <p class="nameWilder"><strong>ANTHONY LABADIE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicCédric Mounier.png" alt="Cédric Mounier" class="picture" />
+        <p class="nameWilder"><strong>CEDRIC MOUNIER</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicGregory Ledez.png" alt="Gregory Ledez" class="picture" />
+        <p class="nameWilder"><strong>GREGORY LEDEZ</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicJulien Dussart.png" alt="Julien Dussart" class="picture" />
+        <p class="nameWilder"><strong>JULIEN DUSSART</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicLuc Jaubert.png" alt="Luc Jaubert" class="picture" />
+        <p class="nameWilder"><strong>LUC JAUBERT</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicMaxime Dupin.png" alt="Maxime Dupin" class="picture" />
+        <p class="nameWilder"><strong>MAXIME DUPIN</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicMehdi Guettache.png" alt="Medhi Guettache" class="picture" />
+        <p class="nameWilder"><strong>MEDHY GUETTACHE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicMichael Birepinte.png" alt="Michael Birepinte" class="picture" />
+        <p class="nameWilder"><strong>MICHAEL BIREPINTE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicNicolas Baudet.png" alt="Nicolas Baudet" class="picture" />
+        <p class="nameWilder"><strong>NICOLAS BAUDET</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicNicolas Delisée.png" alt="Nicolas Delisée" class="picture" />
+        <p class="nameWilder"><strong>NICOLAS DELISEE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicOlga Yasnopolskaya.png" alt="Olga Yasnopolskaya" class="picture" />
+        <p class="nameWilder"><strong>OLGA YASNOLSKAYA</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicOphélie Beausse.png" alt="Ophélie Beausse" class="picture" />
+        <p class="nameWilder"><strong>OPHELIE BEAUSSE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicPaul Battault.png" alt="Paul Battault" class="picture" />
+        <p class="nameWilder"><strong>PAUL BATTAULT</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicPaul Castaings.png" alt="Paul Castaings" class="picture" />
+        <p class="nameWilder"><strong>PAUL CASTAINGS</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicPeter Flandin.png" alt="Peter Flandin" class="picture" />
+        <p class="nameWilder"><strong>PETER FLANDIN</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicRobin Michel.png" alt="Robin Michel" class="picture" />
+        <p class="nameWilder"><strong>ROBIN MICHEL</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicRyan Tama.png" alt="Ryan Tama" class="picture" />
+        <p class="nameWilder"><strong>RYAN TAMA</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicSophie Dussillol.png" alt="Sophie Dussillol" class="picture" />
+        <p class="nameWilder"><strong>SOPHIE DUSSILLOL</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicTheo Anache.png" alt="Theo Anache" class="picture" />
+        <p class="nameWilder"><strong>THEO ANACHE</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicValentin Carbonell.png" alt="Valentin Carbonell" class="picture" />
+        <p class="nameWilder"><strong>VALENTIN CARBONELL</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicVictoire Michel.png" alt="Victoire Michel" class="picture" />
+        <p class="nameWilder"><strong>VICTOIRE MICHEL</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
+      <div class="wilder">
+        <img src="./assets/WildersPic/PicYann Stefanutti.png" alt="Yann Stefanutti" class="picture" />
+        <p class="nameWilder"><strong>YANN STEFANUTTI</strong></p>
+        <p class="descriptionWilder">Developper JS</p>
+      </div>
     </section>
+  </section>
 
-    <section class="profils">
-      <div class="left-arrow">
+  <section class="profils">
+    <div class="left-arrow">
         <img src="/assets/Icon/fleche-droite 2.png" alt="" id="leftArrow" />
-      </div>
-      <div class="profile-container">
+    </div>
+    <div class="profile-container">
         <img src="/assets/Icon/black_cross128px.png" alt="" id="cross" />
-        <img src="/assets/WildersPic/PicAlexandre Pré.png" alt="" id="profile-image" />
+      <img src="/assets/WildersPic/PicAlexandre Pré.png" alt="" id="profile-image" />
 
-        <h2 id="profile-name">ALEXANDRE PRE</h2>
-        <p id="profile-title">JS Developer</p>
-        <div class="bio">
-          <h3 id="profile-headers">Bio:</h3>
-          <p id="profile-text">
+      <h2 id="profile-name">ALEXANDRE PRE</h2>
+      <p id="profile-title">JS Developer</p>
+      <div class="bio">
+        <h3 id="profile-headers">Bio:</h3>
+        <p id="profile-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veritatis! Mollitia dolorem aspe
-          </p>
-        </div>
-        <div class="objectives">
-          <h3 id="profile-headers">Personal Profile:</h3>
-          <p id="profile-text">
+        </p>
+      </div>
+      <div class="objectives">
+        <h3 id="profile-headers">Personal Profile:</h3>
+        <p id="profile-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          </p>
-        </div>
+        </p>
       </div>
-      <div class="right-arrow">
+    </div>
+    <div class="right-arrow">
         <img src="/assets/Icon/fleche-droite 1.png" alt="" id="rightArrow" />
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
+    </div>
   <div class="staffContact">
     <section class="staff">
       <h2 class="staffTitle">STAFF</h2>
@@ -286,8 +302,8 @@
   </div>
   <div class="emailAnim">Mail sent with success</div>
   <footer>
-    <p>Wild Code School - 171 Rue Lucien Faure, 33300 Bordeaux</p>
-  </footer>
+        <p>Wild Code School - 171 Rue Lucien Faure, 33300 Bordeaux</p>
+   </footer>
 </body>
 <script src="suggestion.js"></script>
 <script src="staff.js"></script>
