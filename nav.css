@@ -1,94 +1,104 @@
-
-  li {
-    list-style-type: none;
-    height: 7vw;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-family: var(--title-font);
-  }
- 
-  li:nth-child(2) {
-    color: #fff;
-    font-size: 5vw;
-    width: 2.5vw;
-    list-style-image: url("Wild-logo-1.png");
-    
-  }
-  .navTitle {
-    color: white;
-    font-size: 5vw;
-    width: 45vw;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 1.5em;
-    margin-top: 0.3em;
-    font-family: var(--title-font);
-    grid-area: 1 / 3 / 2 / 4;
-    align-items: center;
+li {
+  list-style-type: none;
+  height: 7vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: var(--title-font);
 }
-  
-  nav {
-    background: #F76C6C;
-    padding: 1vw;
-    height: 10vw;
-    z-index: 100;
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 2fr) 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    justify-content: end;
-    filter: drop-shadow(0px 3px 4px gray);
-    position: fixed;
-  }
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 1vw;
-    background: #F76C6C;
-    color: #fff;
-    position: initial;
-    bottom: 0;
-    font-size: 0.8em;
-    font-family: var(--text-font);
-    height: 100%;
-    filter: drop-shadow(0px 3px 4px gray);
+
+li:nth-child(2) {
+  color: #fff;
+  font-size: 5vw;
+  width: 2.5vw;
+  list-style-image: url("Wild-logo-1.png");
+
+}
+
+.navTitle {
+  color: white;
+  font-size: 5vw;
+  width: 45vw;
+  display: flex;
+  justify-content: flex-start;
+
+  margin-top: 0.6vh;
+  font-family: var(--title-font);
+  grid-area: 1 / 3 / 2 / 4;
+  align-items: center;
+}
+
+nav {
+  background: #F76C6C;
+  padding: 1vw;
+  height: 10vw;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: end;
+  filter: drop-shadow(0px 3px 4px gray);
+  position: fixed;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1vw;
+  background: #F76C6C;
+  color: #fff;
+  position: initial;
+  bottom: 0;
+  font-size: 0.8em;
+  font-family: var(--text-font);
+  height: 100%;
+  filter: drop-shadow(0px 3px 4px gray);
 }
 
 .profil {
-  margin-right: 3vw;
   height: 7vw;
   grid-area: 1 / 4 / 2 / 5;
   margin-top: 0.1em;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0 rgb(141, 68, 81));
+  box-shadow: .6vw .2vw .4vw .02vw rgb(141, 68, 81);
+
+}
+
+#photoProfil {
+  filter: drop-shadow(.6vw .2vw .4vw .02vw rgb(141, 68, 81));
 
 }
 
 .logo {
-  margin-top: 0.4vw;
-    align-items: center;
-    width: 60%;
-    grid-area: 1 / 2 / 2 / 3;
-    margin-left: 7vw;
-    display: flex;
-    justify-content: flex-end;
+  margin-top: 0.2vh;
+  align-items: center;
+  width: 56%;
+  grid-area: 1 / 2 / 2 / 3;
+  margin-left: 10vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Burger {
   margin-left: 1vw;
-    height: 7vw;
-    grid-area: 1 / 1 / 2 / 2;
-    margin-top: 0.1em;
+  width: 5vw;
+  grid-area: 1 / 1 / 2 / 2;
+  margin-top: .6vh;
 }
 
 .bouton1 {
   display: none;
 }
+
 .bouton2 {
   display: none;
 }
+
 .bouton3 {
   display: none;
 }
@@ -109,49 +119,57 @@
   }
 
 
-.logo {
-  grid-area: 1 / 1 / 2 / 2;
-  margin-left: 3vw;
-  margin-top: none;
-  width: 80%;
-}
+  .logo {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 1.8vw;
+    padding-bottom: .8vh;
+    margin-top: none;
+    width: 65%;
+  }
 
-.Burger {
-  display: none;
-}
+  .Burger {
+    display: none;
+  }
 
-.navTitle {
-  grid-area: 1 / 2 / 2 / 3;
-  font-size: 2vw;
-  justify-content: center;
-  width: 25vw;
-}
-.profil {
-  height: initial;
-  grid-area: 1 / 7 / 2 / 8;
-  width: 95%;
-  margin-right: 0;
-}
-.bouton1 {
-  display: block;
-  grid-area: 1 / 4 / 2 / 5;
-  width: 85%;
-  padding-top: .35vw;
-  position: relative;
-  left: 10%;
-}
-.bouton2 {
-  display: block;
-  grid-area: 1 / 5 / 2 / 7;
-  width: 70%;
-  padding-top: .1vw;
-}
-.bouton3 {
-  display: block;
-  grid-area: 1 / 6 / 2 / 7;
-  width: 80%;
-  padding-top: .5vw;
-}
+  .navTitle {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 2vw;
+    justify-content: start;
+    width: 25vw;
+    padding-bottom: 1vh;
+  }
+
+  .profil {
+    height: initial;
+    grid-area: 1 / 7 / 2 / 8;
+    width: 4vw;
+  }
+
+  .bouton1 {
+    display: block;
+    grid-area: 1 / 4 / 2 / 5;
+    width: 85%;
+    padding-top: .35vw;
+    position: relative;
+    left: 10%;
+    cursor: pointer;
+  }
+
+  .bouton2 {
+    display: block;
+    grid-area: 1 / 5 / 2 / 7;
+    width: 70%;
+    padding-top: .1vw;
+    cursor: pointer;
+  }
+
+  .bouton3 {
+    display: block;
+    grid-area: 1 / 6 / 2 / 7;
+    width: 80%;
+    padding-top: .5vw;
+    cursor: pointer;
+  }
 
 
 
