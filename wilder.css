@@ -22,6 +22,19 @@
   outline: none;
 }
 
+#searchInputMobile {
+  justify-content: flex-start;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 0px;
+  filter: drop-shadow(7px 3px 3px gray);
+  width: 95vw;
+  height: 6vw;
+  padding: 0.5em;
+  font-size: 3vw;
+  outline: none;
+}
+
 #buttonSearchBar {
   width: 7vw;
   height: 6vw;

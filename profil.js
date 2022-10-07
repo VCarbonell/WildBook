@@ -9,6 +9,7 @@ const leftArrowImg = document.querySelector("#leftArrow");
 const rightArrowImg = document.querySelector("#rightArrow");
 const cross = document.querySelector("#cross");
 const input = document.getElementById("searchInput");
+const inputMobile = document.getElementById("searchInputMobile");
 const searchButton = document.querySelector("#buttonSearchBar");
 
 for (let i = 0; i < scroll.length; i++) {
@@ -111,6 +112,29 @@ addEventListener("resize", (event) => {
   }
 });
 input.addEventListener("keydown", function (event) {
+  console.log(event.key);
+  console.log(event.target.value);
+  const key = event.key;
+  let inputValue = event.target.value.toUpperCase();
+  for (let i = 0; i < scrollNames.length; i++) {
+    if (scrollNames[i].innerText.includes(inputValue)) {
+      scroll[i].style.display = "grid";
+    }
+  }
+});
+
+inputMobile.addEventListener("input", function (event) {
+  console.log(event.target.value);
+  const key = event.key;
+  let inputValue = event.target.value.toUpperCase();
+  for (let i = 0; i < scrollNames.length; i++) {
+    if (!scrollNames[i].innerText.includes(inputValue)) {
+      scroll[i].style.display = "none";
+    }
+  }
+});
+
+inputMobile.addEventListener("keydown", function (event) {
   console.log(event.key);
   console.log(event.target.value);
   const key = event.key;

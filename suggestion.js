@@ -26,26 +26,26 @@ const persons = [
     "Victoire Michel",
     "Yann Stefanutti",
 ];
+ 
+// const searchInput = document.getElementById('searchInput');
 
-const searchInput = document.getElementById('searchInput');
+// searchInput.addEventListener('keypress', function () {
 
-searchInput.addEventListener('keypress', function () {
+//     const input = searchInput.value;
 
-    const input = searchInput.value;
+//     const result = persons.filter(item => {
+//         if (!item.toUpperCase().search(`${input.toUpperCase()}`)) {
+//             return item;
+//         }
 
-    const result = persons.filter(item => {
-        if (!item.toUpperCase().search(`${input.toUpperCase()}`)) {
-            return item;
-        }
-
-    })
-    console.log(result);
-    for (let i = 0; i < scroll.length; i++) {
-        if (scroll[i].includes(result)) {
-          console.log(true);
-        }
-      }
-})
+//     })
+//     console.log(result);
+//     for (let i = 0; i < scroll.length; i++) {
+//         if (scroll[i].includes(result)) {
+//           console.log(true);
+//         }
+//       }
+// })
 
 
 function hoverSearch(searchBtn) {
