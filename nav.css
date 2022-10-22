@@ -51,8 +51,8 @@ footer {
   padding: 1vw;
   background: #F76C6C;
   color: #fff;
-  position: initial;
-  bottom: 0;
+  /* position: initial;
+  bottom: 0; */
   font-size: 0.8em;
   font-family: var(--text-font);
   height: 100%;

@@ -21,4 +21,6 @@
 body {
     background-image: url("./assets/BackgroundPic.png");
     background-size: cover;
+    height: 100%;
+    
 }
